@@ -1,2 +1,2 @@
-# saki-ui-core
-@saki-ui/core, JavaScript function extension library of Saki UI.
+# nyanyajs-utils
+NyaNya Neko！JavaScript Tools Class.
