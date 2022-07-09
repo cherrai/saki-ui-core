@@ -8,7 +8,8 @@
     // macos
 		// "outDir": "../meow-whisper/meow-whisper-web-client/node_modules/@saki-ui/core/dist",
     // windows11
-		"outDir": "../../cherrai/meow-whisper/meow-whisper-web-client/node_modules/@saki-ui/core/dist",
+		// "outDir": "../../cherrai/meow-whisper/meow-whisper-web-client/node_modules/@saki-ui/core/dist",
+    "outDir": "../../meow-sticky-note/client/node_modules/@saki-ui/core/dist",
 		// "outDir": "../../MetahorizonLab/saki-ui/node_modules/@nyanyajs/utils/dist",
 		// "outDir": "../../MetahorizonLab/saki-sso/saki-sso-client/node_modules/@nyanyajs/utils/dist",
 		// "outDir": "../../MetahorizonLab/saki-sso/saki-sso-server/node_modules/@nyanyajs/utils/dist",
