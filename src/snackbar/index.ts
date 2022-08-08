@@ -3,7 +3,7 @@ export const snackbar = (options: {
 	autoHideDuration?: number
 	vertical: 'bottom' | 'center' | 'top'
 	horizontal: 'left' | 'center' | 'right'
-	closeIcon: boolean
+	closeIcon?: boolean
 	backgroundColor?: string
 	backgroundHoverColor?: string
 	backgroundActiveColor?: string
@@ -24,7 +24,7 @@ export const snackbar = (options: {
 			}
 			el = document.createElement('saki-snackbar')
 			// console.log('state.app.status', el)
-      console.log(el)
+      // console.log(el)
 			const { onTap } = options
 			Object.keys(options).forEach((k) => {
 				if (k != 'onTap' && options[k]) {

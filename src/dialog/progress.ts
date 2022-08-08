@@ -1,4 +1,8 @@
-export const progressBar = () => {
+export const progressBar = (options?: {
+	maxWidth?: string
+	minWidth?: string
+	width?: string
+}) => {
 	let el: any
 	const api = {
 		open() {
@@ -8,6 +12,9 @@ export const progressBar = () => {
 			}
 			el = document.createElement('saki-dialog-progress-bar')
 
+			Object.keys(['maxWidth', 'minWidth', 'width']).forEach((k) => {
+				options?.[k] && (el[k] = options?.[k])
+			})
 			el.open()
 			el.addEventListener('close', () => {
 				// console.log('el', el)
