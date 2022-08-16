@@ -1,11 +1,13 @@
 {
-	"name": "@nyanyajs/utils",
-	"version": "1.0.4",
-	"description": "nyanyajs/utils",
+	"name": "@saki-ui/core",
+	"version": "1.0.0",
+	"description": "@saki-ui/core",
 	"main": "./dist/index.js",
 	"scripts": {
 		"test:watch": "nodemon -e ts,tsx --exec ts-node ./test/index.ts",
-		"build": "tsc"
+		"build": "tsc",
+		"publish": "npm publish --registry https://registry.npm.aiiko.club",
+		"unpublish": "npm unpublish @saki-ui/core@1.0.0  --registry https://registry.npm.aiiko.club"
 	},
 	"author": "shiina_aiiko",
 	"repository": {
