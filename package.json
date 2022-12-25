@@ -23,6 +23,7 @@
 		"blueimp-md5": "^2.19.0"
 	},
 	"devDependencies": {
-		"@types/blueimp-md5": "^2.18.0"
+		"@types/blueimp-md5": "^2.18.0",
+		"typescript": "^4.9.3"
 	}
 }
