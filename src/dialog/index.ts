@@ -1,4 +1,6 @@
 export const alert = ({
+	titleAvatar,
+	titleAvatarText,
 	title,
 	content,
 	cancelText,
@@ -8,6 +10,8 @@ export const alert = ({
 	onCancel,
 	onConfirm,
 }: {
+	titleAvatar?: string
+	titleAvatarText?: string
 	title: string
 	content: string
 	cancelText?: string
@@ -20,6 +24,9 @@ export const alert = ({
 	const el: any = document.createElement('saki-dialog-alert')
 	const api = {
 		open() {
+			el['title'] = title
+			el['titleAvatar'] = titleAvatar || ''
+			el['titleAvatarText'] = titleAvatarText || ''
 			el['title'] = title
 			el['content'] = content
 			el['cancelText'] = cancelText
@@ -43,6 +50,9 @@ export const alert = ({
 				onConfirm?.()
 			})
 			document.body.appendChild(el)
+		},
+		close() {
+			el?.close?.()
 		},
 	}
 	return api

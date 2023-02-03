@@ -1,12 +1,12 @@
 {
 	"name": "@saki-ui/core",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "@saki-ui/core",
 	"main": "./dist/index.js",
 	"scripts": {
 		"test:watch": "nodemon -e ts,tsx --exec ts-node ./test/index.ts",
 		"build": "tsc",
-		"publish": "npm publish --registry https://registry.npm.aiiko.club",
+		"pub": "npm publish --registry https://registry.npm.aiiko.club",
 		"unpublish": "npm unpublish @saki-ui/core@1.0.0  --registry https://registry.npm.aiiko.club"
 	},
 	"author": "shiina_aiiko",
