@@ -1,6 +1,6 @@
 {
 	"name": "@saki-ui/core",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"description": "@saki-ui/core",
 	"main": "./dist/index.js",
 	"scripts": {

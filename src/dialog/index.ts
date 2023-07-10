@@ -21,9 +21,10 @@ export const alert = ({
 	onCancel?: () => void
 	onConfirm?: () => void
 }) => {
-	const el: any = document.createElement('saki-dialog-alert')
+	let el: any
 	const api = {
 		open() {
+			el = document.createElement('saki-dialog-alert')
 			el['title'] = title
 			el['titleAvatar'] = titleAvatar || ''
 			el['titleAvatarText'] = titleAvatarText || ''
