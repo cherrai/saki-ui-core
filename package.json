@@ -1,11 +1,12 @@
 {
 	"name": "@saki-ui/core",
-	"version": "1.0.2",
+	"version": "1.0.3",
 	"description": "@saki-ui/core",
 	"main": "./dist/index.js",
 	"scripts": {
 		"test:watch": "nodemon -e ts,tsx --exec ts-node ./test/index.ts",
 		"build": "tsc",
+		"dev": "tsc --watch",
 		"pub": "npm publish --registry https://registry.npm.aiiko.club",
 		"unpublish": "npm unpublish @saki-ui/core@1.0.0  --registry https://registry.npm.aiiko.club"
 	},

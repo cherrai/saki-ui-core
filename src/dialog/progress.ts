@@ -2,6 +2,9 @@ export const progressBar = (options?: {
 	maxWidth?: string
 	minWidth?: string
 	width?: string
+	color?: string
+	// ms
+	delay?: number
 }) => {
 	let el: any
 	const api = {
@@ -11,9 +14,11 @@ export const progressBar = (options?: {
 				return
 			}
 			el = document.createElement('saki-dialog-progress-bar')
-			Object.keys(['maxWidth', 'minWidth', 'width']).forEach((k) => {
-				options?.[k] && (el[k] = options?.[k])
-			})
+			Object.keys(['maxWidth', 'color', 'minWidth', 'width', 'delay']).forEach(
+				(k) => {
+					options?.[k] && (el[k] = options?.[k])
+				}
+			)
 			el.open()
 			el.addEventListener('close', () => {
 				// console.log('el', el)
@@ -26,20 +31,27 @@ export const progressBar = (options?: {
 			progress,
 			tipText,
 			tipColor,
+			color,
+			delay,
 			onAnimationEnd,
 		}: {
 			progress: number
 			tipText?: string
 			tipColor?: string
+			color?: string
+			// ms
+			delay?: number
 			onAnimationEnd?: () => void
 		}) {
 			el['progress'] = progress
 			el['tipText'] = tipText || ''
 			el['tipColor'] = tipColor || ''
+			el['color'] = color || ''
+			delay && (el['delay'] = delay)
 			onAnimationEnd &&
 				setTimeout(() => {
 					onAnimationEnd()
-				}, 500)
+				}, delay || 500)
 		},
 		close() {
 			el?.close && el?.close()

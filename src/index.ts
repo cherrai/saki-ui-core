@@ -1,9 +1,10 @@
 import { snackbar } from './snackbar'
-import { alert, prompt, multiplePrompts } from './dialog'
+import { prompt, multiplePrompts } from './dialog'
+import { alert } from './dialog/alert'
 import { progressBar } from './dialog/progress'
 import { bindEvent } from './common/bindEvent'
 import { CSR } from './common/common'
-export { snackbar, alert, prompt, progressBar, bindEvent, CSR, multiplePrompts }
+export { snackbar, prompt, progressBar, bindEvent, CSR, multiplePrompts, alert }
 export default {
 	snackbar,
 	alert,
