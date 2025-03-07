@@ -9,7 +9,7 @@
 		// "outDir": "../meow-whisper/meow-whisper-web-client/node_modules/@saki-ui/core/dist",
 		// windows11
 
-		"outDir": "../../game/killer-sudoku-nya/node_modules/@saki-ui/core/dist",
+		// "outDir": "../../game/killer-sudoku-nya/node_modules/@saki-ui/core/dist",
 		// "outDir": "../../shiina_aiiko/meow-cloud-sharing/node_modules/@saki-ui/core/dist",
 		// "outDir":"../../shiina_aiiko/meow-backups/web/node_modules/@saki-ui/core/dist",
 		// "outDir": "../../shiina-aiiko/meow-whisper-core/example/simple-chat-demo/node_modules/@saki-ui/core/dist",
@@ -22,7 +22,7 @@
 		// "outDir": "./examples/react/node_modules/@nyanyajs/nyanyadb",
 		// "outDir": "./examples/demo/src/nyanyadb",
 		// "outFile": "./examples/demo/src/nyanyadb.js",
-		// "outDir": "./dist",
+		"outDir": "./dist",
 		"rootDir": "./src",
 		"allowJs": false,
 		"declaration": true,
