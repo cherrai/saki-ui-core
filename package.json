@@ -1,30 +1,30 @@
 {
-	"name": "@saki-ui/core",
-	"version": "1.0.4",
-	"description": "@saki-ui/core",
-	"main": "./dist/index.js",
-	"scripts": {
-		"test:watch": "nodemon -e ts,tsx --exec ts-node ./test/index.ts",
-		"build": "tsc",
-		"dev": "tsc --watch",
-		"pub": "npm publish --registry https://registry.npm.aiiko.club",
-		"unpublish": "npm unpublish @saki-ui/core@1.0.0  --registry https://registry.npm.aiiko.club"
-	},
-	"author": "shiina_aiiko",
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/ShiinaAiiko/nyanyajs-utils.git"
-	},
-	"license": "ISC",
-	"bugs": {
-		"url": "https://github.com/ShiinaAiiko/nyanyajs-utils/issues"
-	},
-	"homepage": "https://github.com/ShiinaAiiko/nyanyajs-utils#readme",
-	"dependencies": {
-		"blueimp-md5": "^2.19.0"
-	},
-	"devDependencies": {
-		"@types/blueimp-md5": "^2.18.0",
-		"typescript": "^4.9.3"
-	}
+  "name": "@saki-ui/core",
+  "version": "1.0.6",
+  "description": "@saki-ui/core",
+  "main": "./dist/index.js",
+  "scripts": {
+    "test:watch": "nodemon -e ts,tsx --exec ts-node ./test/index.ts",
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "pub": "npm publish --registry https://registry.npm.aiiko.club",
+    "unpublish": "npm unpublish @saki-ui/core@1.0.0  --registry https://registry.npm.aiiko.club"
+  },
+  "author": "shiina_aiiko",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ShiinaAiiko/nyanyajs-utils.git"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ShiinaAiiko/nyanyajs-utils/issues"
+  },
+  "homepage": "https://github.com/ShiinaAiiko/nyanyajs-utils#readme",
+  "dependencies": {
+    "blueimp-md5": "^2.19.0"
+  },
+  "devDependencies": {
+    "@types/blueimp-md5": "^2.18.0",
+    "typescript": "^4.9.3"
+  }
 }
