@@ -198,6 +198,7 @@ export const multiplePrompts = ({
         // }
         multipleInputs?.some((v) => {
           if (v.label === e.detail?.label) {
+            v.value = e.detail.value
             v?.onChange?.(e.detail.value)
             return true
           }
@@ -251,6 +252,19 @@ export const multiplePrompts = ({
         }
       })
       el?.setButton?.(buttons)
+    },
+    setButtons(params: typeof buttons) {
+      if (!params?.length) return
+
+      buttons = params
+
+      el?.setButton?.(params)
+    },
+    setMultipleInputs(params: typeof multipleInputs) {
+      if (!params?.length) return
+      multipleInputs = params
+
+      el?.setMultipleInputs?.(params)
     },
     close() {
       el?.close && el?.close()
