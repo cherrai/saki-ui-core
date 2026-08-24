@@ -4,6 +4,8 @@ export const snackbar = (options: {
   vertical: 'bottom' | 'center' | 'top'
   horizontal: 'left' | 'center' | 'right'
   closeIcon?: boolean
+  borderDistance?: string
+  borderRadius?: string
   backgroundColor?: string
   backgroundHoverColor?: string
   backgroundActiveColor?: string
@@ -26,9 +28,12 @@ export const snackbar = (options: {
       // console.log('state.app.status', el)
       // console.log(el)
       const { onTap } = options
+
+      const optionsAny = options as any
+
       Object.keys(options).forEach((k) => {
-        if (k != 'onTap' && options[k]) {
-          el[k] = options[k]
+        if (k != 'onTap' && optionsAny[k]) {
+          el[k] = optionsAny[k]
         }
       })
       if (onTap) {
